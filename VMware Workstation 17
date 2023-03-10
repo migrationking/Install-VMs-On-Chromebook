@@ -1,0 +1,40 @@
+How to Install VMware Workstation on Chromebook
+
+1. Download the latest version of GCC
+https://mirrors.concertpass.com/gcc/releases/gcc-12.2.0/
+
+1a. Download VMware Workstation (This software requires a license to run, but you can use the trial)
+https://customerconnect.vmware.com/en/downloads/details?downloadGroup=WKST-1701-LX&productId=1376&rPId=100684
+
+2. Copy the tarball to the Linux Folder
+
+3. Prep the Container
+sudo apt-get install lib-dev build-essential dkms -y
+
+3a. If you need to use a SmartCard. Install these packages to enable:
+sudo apt-get install libpcsclite1 pcscd
+sudo systemctl start pcscd
+systemctl status pcscd
+
+4. Next we are going to install the latest version of GCC that will be compatible with VMware Workstation 17
+sudo apt-get update && sudo apt-get upgrade -y
+tar -xvf gcc-12.2.0.tar.gz
+cd gcc-*
+./contrib/download_prerequisites
+
+5. Check the number of CPU's for your machine by running this command. This is necessary to build the gcc package from source:
+grep -w processor /proc/cpuinfo|wc -l
+
+6. Run the configure with sudo
+sudo ./configure --enable-languages=c,c++ --disable-multilib --with-system-zlib --prefix=/usr/local/linux_gcc12.2.0
+
+7. Run the make command the number after -j is the number of CPU's on your machine that you got from cpuinfo (it will take about 30-45 minutes to run depending on how much RAM/Memory you allocated to the container. Grab some Chai, Cheesesteak, Nama Choma o a Coffee):
+make -j8 
+
+8. Next install the make build
+sudo make install
+
+- [] Operational/Working
+- [x] Not Working
+- [] Issues with packages 
+-GCC Version
