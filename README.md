@@ -9,7 +9,7 @@ If you do want to find a Linux laptop. You can go to this page for Linux Manufac
 
 The configurations that will be covered are the following:
 
-- [x] VMware Workstation 17 :+1:
+- [x] VMware Workstation 17 :-1:
 
 - [ ] KVM on Debian 11 (Built-In Container)
 
