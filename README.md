@@ -11,7 +11,7 @@ The configurations that will be covered are the following:
 
 - [x] VMware Workstation 17 :+1:
 
-- [ ] KVM on Debian 11 (as of this writing) which comes with Chromebooks
+- [ ] KVM on Debian 11 container
 
 - [ ] Virtualbox
 
