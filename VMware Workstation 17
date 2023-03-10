@@ -36,5 +36,5 @@ sudo make install
 
 - [] Operational/Working
 - [x] Not Working
-- [] Issues with packages 
+- [x] Issues with packages 
 -GCC Version
