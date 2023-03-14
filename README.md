@@ -13,7 +13,7 @@ The configurations that will be covered are the following:
 
 - [ ] KVM on Debian 11 (Built-In Container)
 
-- [ ] Virtualbox
+- [x] Virtualbox : -1:
 
 The configurations are based upon testing on the following machine:
 
