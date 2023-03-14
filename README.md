@@ -11,7 +11,7 @@ The configurations that will be covered are the following:
 
 - [x] VMware Workstation 17 :-1:
 
-- [ ] KVM on Debian 11 (Built-In Container) :+1:
+- [X] KVM on Debian 11 (Built-In Container) :+1:
 
 - [x] Virtualbox :-1:
 
